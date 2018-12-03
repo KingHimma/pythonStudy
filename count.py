@@ -11,11 +11,19 @@ with open('/Users/gongdaoyan/Documents/sublime Text/python/countFile', 'r') as f
 		count = count + 1
    		dmap[key] = count
 
-print dmap
+print dmap.__len__()
+# print dmap
 
+# file = open('/Users/gongdaoyan/Documents/sublime Text/python/result','w')
+count = 0
+print dmap
 for x in dmap:
-	count = dmap.get(x, 0)
-	if count > 10:
-		print(x, count)
-	
+	# if dmap.get(x) == 1:
+	print(x)
+		# count = count + 1
+		# print count
+	# file.write(x)
+	# file.write(';')
+
+
 

@@ -69,7 +69,7 @@ print customlist
 
 #切片
 L = list(range(100))
-print L 
+print L
 print L[-10:]
 ## 前十个数，每两个取一个
 print L[:10:2]

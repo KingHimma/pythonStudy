@@ -13,13 +13,13 @@ import requests
 def exct(url, date = {}, cookies = ''):
 	print url
 	headers = {}
-	return requests.post('http://gray.erp.superboss.cc/%s'%url, data=json.dumps(date), cookies = cookies,headers= headers).content
+	return requests.post('%s'%url, data=json.dumps(date), cookies = cookies,headers= headers).content
 
 def jsonPost(url, date = {}, cookies = ''):
 	print url
 	print date
 	headers = {'Content-Type': 'application/json'}
-	return requests.post('http://local.erp.superboss.cc/%s'%url, data=json.dumps(date), cookies = cookies,headers= headers).content
+	return requests.post('/%s'%url, data=json.dumps(date), cookies = cookies,headers= headers).content
 
 
 # def jsonPost(url, date = {}, cookies = ''):

@@ -14,7 +14,9 @@ split(3)
 file.close()
 split(3)
 file = open('/Users/gongdaoyan/Documents/sublime Text/python/io','w')
-file.write('## test io writelines')
+file.writelines('## test io writelines1')
+file.writelines('\r\n')
+file.writelines('## test io writelines2')
 file.close()
 file = open('/Users/gongdaoyan/Documents/sublime Text/python/io','r')
 print file.read()
@@ -24,3 +26,4 @@ Split.split()
 
 import os
 print os.name
+

@@ -21,6 +21,7 @@ def createExcel(excelData, fileName):
 	outFile1.save(r'/Users/gongdaoyan/Desktop/%s.xls'%fileName)
 
 
+
 company=[[1,2,3],[5,3,3],[7,7,7]]
 createExcel(company, 'test')
 
